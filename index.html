@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My GitHub Page</title>
+    <meta
+      name="description"
+      content="A modern personal GitHub Page with About, Experience, Projects, and Contact sections."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#home">Your Name</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero card">
+        <p class="eyebrow">Welcome to my GitHub Page</p>
+        <h1>Hi, I’m <span class="accent">Your Name</span></h1>
+        <p>
+          I build thoughtful digital experiences with clean code, strong collaboration,
+          and a focus on user impact.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="card section">
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate developer who enjoys transforming ideas into polished products.
+          I love working across the stack, learning new technologies, and shipping features
+          that make people’s lives easier.
+        </p>
+      </section>
+
+      <section id="experience" class="card section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article>
+            <h3>Software Engineer · Example Corp</h3>
+            <p class="muted">2022 — Present</p>
+            <p>
+              Designed and delivered scalable web features, improved performance, and
+              partnered with design/product to ship customer-focused improvements.
+            </p>
+          </article>
+          <article>
+            <h3>Frontend Developer · Startup Studio</h3>
+            <p class="muted">2020 — 2022</p>
+            <p>
+              Built reusable UI components and responsive interfaces, reducing development
+              time and improving consistency across products.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="card section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-item">
+            <h3>Project One</h3>
+            <p>
+              A full-stack app that streamlines workflows with an intuitive dashboard and
+              real-time collaboration.
+            </p>
+          </article>
+          <article class="project-item">
+            <h3>Project Two</h3>
+            <p>
+              A performant frontend experience focused on accessibility, mobile-first design,
+              and smooth interactions.
+            </p>
+          </article>
+          <article class="project-item">
+            <h3>Project Three</h3>
+            <p>
+              A data visualization project turning complex datasets into actionable insights
+              through clear storytelling.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card section">
+        <h2>Contact</h2>
+        <p>
+          Interested in collaborating or just saying hello? Reach out anytime.
+        </p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
