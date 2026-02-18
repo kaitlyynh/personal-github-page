@@ -9,8 +9,6 @@
   --accent-strong: #e8922a;
   --shadow: 0 14px 36px rgba(224, 154, 57, 0.2);
   --side-glow: rgba(240, 145, 48, 0.26);
-  --experience-bg: rgba(255, 237, 213, 0.78);
-  --experience-border: rgba(231, 139, 44, 0.42);
 }
 
 * {
@@ -230,13 +228,11 @@ h2 {
 }
 
 .timeline article {
-  border: 1px solid var(--experience-border);
-  border-radius: 22px;
-  padding: 1.05rem 1.05rem 1.05rem 1.15rem;
-  background: linear-gradient(155deg, rgba(255, 248, 235, 0.96) 0%, rgba(255, 226, 188, 0.86) 100%);
-  box-shadow:
-    inset 6px 0 0 rgba(236, 141, 44, 0.9),
-    0 8px 18px rgba(229, 146, 65, 0.16);
+  border: 1px solid rgba(232, 162, 75, 0.42);
+  border-radius: 16px;
+  padding: 1rem 1rem 1rem 1.05rem;
+  background: rgba(255, 250, 229, 0.72);
+  box-shadow: inset 4px 0 0 rgba(244, 179, 74, 0.9);
 }
 
 .muted {
