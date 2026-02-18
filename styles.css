@@ -170,7 +170,10 @@ h1 {
 .timeline article {
   border-left: 4px solid var(--accent);
   padding-left: 0.8rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08)
 }
+
 
 .muted {
   color: var(--muted);
@@ -210,4 +213,24 @@ h1 {
   .hero {
     padding: 1.4rem;
   }
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap; /* stacks on mobile */
+}
+
+.about-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px; /* rounded rectangle */
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
 }
