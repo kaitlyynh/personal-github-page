@@ -213,6 +213,15 @@ h2 {
   margin-top: 0.8rem;
 }
 
+#experience.card {
+  background: linear-gradient(165deg, rgba(255, 244, 227, 0.92) 0%, var(--experience-bg) 100%);
+  border-color: rgba(231, 153, 73, 0.5);
+}
+
+#experience h2 {
+  color: #b76413;
+}
+
 .timeline {
   display: grid;
   gap: 1.15rem;
