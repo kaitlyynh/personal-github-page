@@ -232,7 +232,9 @@ h1 {
   background: rgba(16, 20, 30, 0.82);
 }
 
-.project-grid {
+.timeline {
+  border-left: 2px solid var(--line);
+  padding-left: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
