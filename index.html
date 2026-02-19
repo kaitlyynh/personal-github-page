@@ -3,138 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Kaitlyn Huynh</title>
+    <title>Kaitlyn Huynh | Software Engineer Portfolio</title>
     <meta
       name="description"
-      content="A modern personal GitHub Page with About, Experience, Projects, and Contact sections."
+      content="Modern GitHub Pages portfolio for Kaitlyn Huynh, software engineer, builder, and problem solver."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-bg" aria-hidden="true"></div>
+    <div class="background" aria-hidden="true">
+      <div class="grid-overlay"></div>
+      <div class="gradient-orb orb-one"></div>
+      <div class="gradient-orb orb-two"></div>
+      <canvas id="particles-canvas"></canvas>
+    </div>
 
     <header class="site-header">
-      <nav class="nav container">
+      <nav class="nav container" aria-label="Primary">
         <a class="brand" href="#home">Kaitlyn Huynh</a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
         <ul class="nav-links">
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main id="home" class="container">
-      <section id="about" class="card section">
+    <main id="home">
+      <section class="hero container">
+        <p class="eyebrow">Welcome to my portfolio</p>
+        <h1>Learn about Kaitlyn Huynh.</h1>
+        <p class="subtitle">Software Engineer | Builder | Problem Solver</p>
+        <a class="cta" href="#about">Explore my work</a>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span></span>
+          <p>Scroll</p>
+        </div>
+      </section>
+
+      <section id="about" class="section container reveal">
         <h2>About Me</h2>
-        <article class="about-card">
-          <img src="about-me-pic.png" alt="Kaitlyn Huynh" class="about-image" />
-          <div class="about-text">
-            <p>
-              <strong>Innovating to create positive impact, one project at a time.</strong>
-            </p>
-            <p>
-              Beginning my career as a Software Engineer, my passion is delivering practical and
-              impactful products to solve real-world issues. My interest in technology started as
-              a gaming hobby and has grown into a deep appreciation for problem solving and
-              continuous learning. Outside of coding, I enjoy trying new foods, activities, and
-              long walks.
-            </p>
-          </div>
+        <div class="about-layout">
+          <figure class="profile-frame">
+            <img src="about-me-pic.png" alt="Kaitlyn Huynh profile portrait" />
+            <figcaption>Replace this image with your preferred headshot.</figcaption>
+          </figure>
+          <p>
+            I am a software engineer focused on building reliable, human-centered products that solve
+            meaningful real-world problems. I love working across the stack, improving legacy systems,
+            and delivering polished user experiences with measurable impact.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section container reveal">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="timeline-card">
+            <header>
+              <h3>Software Engineer</h3>
+              <p>BNSF Railway · Present</p>
+            </header>
+            <ul>
+              <li>Modernizing legacy enterprise platforms for reliability and maintainability.</li>
+              <li>Improving internal user experience consistency across core applications.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card">
+            <header>
+              <h3>Engineering Analyst Intern</h3>
+              <p>Goldman Sachs · Summer 2024</p>
+            </header>
+            <ul>
+              <li>Enhanced CRM navigation workflows for Private Wealth Advisors.</li>
+              <li>Delivered backend improvements using Salesforce and Spring Boot.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card">
+            <header>
+              <h3>Software Engineer Intern</h3>
+              <p>Principal Financial Group · Summer 2023</p>
+            </header>
+            <ul>
+              <li>Helped modernize an internal ticketing workflow platform.</li>
+              <li>Contributed to cost optimization and operational efficiency initiatives.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section container reveal">
+        <h2>Education</h2>
+        <article class="education-card">
+          <h3>University of Nebraska–Lincoln</h3>
+          <p>B.S. in Software Engineering</p>
+          <p class="date">Graduation Date: May 2025</p>
         </article>
       </section>
 
-      <section id="experience" class="card section">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <article>
-            <h3>Software Engineer · BNSF Railway</h3>
-            <p class="muted">Present</p>
-            <p>
-              Contributing to the Enterprise team by modernizing legacy platforms and ensuring a
-              consistent user experience across internal systems
-            </p>
-          </article>
-          <article>
-            <h3>Engineering Analyst Intern · Goldman Sachs</h3>
-            <p class="muted">Summer 2024</p>
-            <p>
-              Collaborated with the CRM team to enhance navigation efficiency for Private Wealth
-              Advisors, leveraging Salesforce and Spring Boot to improve platform usability and
-              performance
-            </p>
-          </article>
-          <article>
-            <h3>Software Engineer Intern · Principal Financial Group</h3>
-            <p class="muted">Summer 2023</p>
-            <p>
-              Partnered with the Infrastructure team to modernize the internal ticketing system,
-              improving operational workflows and contributing to cost optimization initiative
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="card section">
+      <section id="projects" class="section container reveal">
         <h2>Projects</h2>
         <div class="project-grid">
-          <article class="project-item">
+          <article class="project-card">
             <h3>BeThereBot</h3>
-            <p>
-              Automated shift lookup processes by parsing Excel files with Pandas, PostgreSQL,
-              Python, delivering secure email and SMS notifications to simplify scheduling efforts
-            </p>
+            <p>Automated shift lookup and notifications by parsing scheduling files and messaging users.</p>
+            <p class="stack">Python · Pandas · PostgreSQL</p>
           </article>
-          <article class="project-item">
+
+          <article class="project-card">
             <h3>Find a Potty</h3>
-            <p>
-              Built a location based web application using Google Maps APIs to provide intelligent,
-              distance based recommendations for nearby public restrooms using React, Flask, and
-              Python
-            </p>
+            <p>Location-aware web app for smart restroom recommendations using map APIs and distance ranking.</p>
+            <p class="stack">React · Flask · Python · Google Maps API</p>
+            <div class="project-links">
+              <a href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
           </article>
-          <article class="project-item">
+
+          <article class="project-card">
             <h3>SmartBanner AI</h3>
-            <p>
-              Developed an AI powered tool that generates themed advertisements by analyzing slide
-              content, extracting color palettes and contextual keywords to determine visual and
-              semantic themes. Built using DALL-E, Flask
-            </p>
+            <p>Generated themed ads from slide context using AI-powered image generation and semantic analysis.</p>
+            <p class="stack">Python · Flask · OpenAI APIs</p>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="card section">
+      <section id="contact" class="section container reveal">
         <h2>Contact</h2>
-        <p>Interested in collaborating? Feel free to reach out!</p>
-        <ul class="contact-list icon-contact-list">
-          <li>
-            <a href="https://linkedin.com/in/kaitlynhuynh1028" target="_blank" rel="noreferrer">
-              <span class="contact-icon" aria-hidden="true">🔗</span>
-              <span>linkedin.com/in/kaitlynhuynh1028</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:kaitlynhuynh1028@gmail.com">
-              <span class="contact-icon" aria-hidden="true">✉️</span>
-              <span>kaitlynhuynh1028@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <span class="contact-static">
-              <span class="contact-icon" aria-hidden="true">📞</span>
-              <span>929-461-6602</span>
-            </span>
-          </li>
-        </ul>
+        <div class="contact-layout">
+          <form class="contact-form" action="#" method="post">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Say hello..."></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+
+          <aside class="contact-panel">
+            <p>Email</p>
+            <a href="mailto:kaitlynhuynh1028@gmail.com">kaitlynhuynh1028@gmail.com</a>
+            <div class="socials">
+              <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://linkedin.com/in/kaitlynhuynh1028" aria-label="LinkedIn" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </aside>
+        </div>
       </section>
     </main>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
