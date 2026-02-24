@@ -23,17 +23,6 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Deploy to GitHub Pages
-
-1. Commit and push the repository to GitHub.
-2. On GitHub, go to **Settings → Pages**.
-3. Under **Build and deployment**, choose:
-   - **Source**: `Deploy from a branch`
-   - **Branch**: `main` (or your deploy branch)
-   - **Folder**: `/ (root)`
-4. Save and wait for deployment.
-5. Your site will be live at:
-   - `https://<your-github-username>.github.io/<repository-name>/`
 
 ## Notes
 
